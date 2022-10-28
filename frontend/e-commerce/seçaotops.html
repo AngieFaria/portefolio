@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KBVA - Retro Vision</title>
+  <meta nome="description" content="ecommerce">
+  <meta name="description" property="og:description" content="ecommerce ">
+  <meta name="image" property="og:image" content="./Design/Desing-web.png">
+  <meta name="author" content="Angela faria">
+
+  <link rel="icon" href="./IMG/logo-roxo.png" wigth="100" height="100" type="image/svg+xml">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/css/bootstrap-utilities.css">
+  <link rel="stylesheet" href="styletops.css">
+  <!-- FIM CSS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<!-- Modal  1 -->
+<div class="modal modal1 fade" id="modalLOGIN" tabindex="-1" aria-labelledby="modalLOGIN" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modal-content1">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3" id="modalLOGIN">Iniciar Sessão</h1>
+        <button type="button" class="btn-close closebtn" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="emailLOGIN" class="form-label fs-5">Email</label>
+            <input type="email" class="form-control form-borda" id="emailLOGIN" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="passeLOGIN" class="form-label fs-5">Password</label>
+            <input type="password" class="form-control form-borda" id="passeLOGIN">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input form-borda" id="exampleCheck1">
+            <label class="form-check-label fs-6" for="exampleCheck1">Lembrar-me</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-perso1-pass" data-bs-dismiss="modal">Esqueceu-se da palavra passe?</button>
+        <button type="button" class="btn btn-perso1-login fs-5">Iniciar Sessão</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal  2 -->
+<div class="modal modal1 fade" id="modalREGISTRO" tabindex="-1" aria-labelledby="modalREGISTRO" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modal-content1">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3" id="modalREGISTRO">Sou Novo Cliente</h1>
+        <button type="button" class="btn-close closebtn" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row ">
+            <div class="col ">
+              <label for="nomeREGISTRO" class="form-label fs-5">Nome</label>
+              <input type="text" class="form-control form-borda" aria-label="First name">
+            </div>
+            <div class="col">
+              <label for="apelidoREGISTRO" class="form-label fs-5">Apelido</label>
+              <input type="text" class="form-control form-borda" aria-label="Last name">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="emailREGISTRO" class="form-label fs-5 mt-3">Email</label>
+            <input type="email" class="form-control form-borda" id="emailREGISTRO" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="passeREGISTRO" class="form-label fs-5">Password</label>
+            <input type="password" class="form-control form-borda" id="passeREGISTRO">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input form-borda" id="exampleCheck1">
+            <label class="form-check-label fs-6" for="exampleCheck1">Eu concordo com a Política de Privacidade e Cookies e Termos e condições</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-perso1-login fs-5">Registrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FIM Modal  2 -->
+<!-- NAV -->
+<nav class="navbar navbar-dark bg-dark ">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-4 coluna-50">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="btn btn-perso1" data-bs-toggle="modal" data-bs-target="#modalLOGIN" type="button">Login</button>
+        <button class="btn btn-perso" data-bs-toggle="modal" data-bs-target="#modalREGISTRO" type="button">Criar conta</button>
+        <a href="/">
+          <img class="icones-menu" src="./IMG/sacolas-de-compras (1).png" alt="Sacola De Compra"></a>
+      </div>
+      <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title font-menu2" id="offcanvasDarkNavbarLabel">KBVA - Retro Vision</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link font-menu2" aria-current="page" href="#"> Início</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle font-menu2" href="seçaotops.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Roupa
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item font-menu" href="seçaotops.html">Nova Coleção</a></li>
+                <li><a class="dropdown-item font-menu" href="seçaotops.html">Saldos</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item font-menu" href="seçaotops.html">Tops</a></li>
+                <li><a class="dropdown-item font-menu" href="seçaotops.html">Vestido</a></li>
+                <li><a class="dropdown-item font-menu" href="seçaotops.html">Calças</a></li>
+
+                <li><a class="dropdown-item font-menu" href="seçaotops.html">Acessórios</a></li>
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link font-menu2" href="#"> Marca</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-menu2" href="#"> Conta</a>
+            </li>
+            <li class="nav-item mt-4">
+              <a class="nav-link font-menu2 btn btn-secondary btn-secondary2" data-bs-toggle="modal" data-bs-target="#modalLOGIN" type="button">Login</a>
+            </li>
+            <li class="nav-item mt-4">
+              <a class="nav-link font-menu2 btn btn-secondary btn-secondary2" data-bs-toggle="modal" data-bs-target="#modalREGISTRO" type="button">Criar Nova conta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="img-logo col-4 some-300">
+        
+        <a href="index.html"><img class="" src="./IMG/logo.png" alt="LOGOKVBA"></a>
+      </div>
+      <div class="col-4 coluna-50">
+        <form class="row align-items-center">
+          <div class="col-4"></div>
+          <div class="col-6 form-100">
+            <input type="pesquisa" class="form-control1" placeholder="Pesquisar">
+          </div>
+          <div class="col-2 ">
+            <a href=""> <img class="lupa" src="./IMG/lupa (1).png" alt="Lupa"></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+</nav>
+<!-- NAV -->
+
+    <!-------------------------------------carrosel------------------------------------->
+
+    <div class="sales">
+      <img src="IMG/header.png">
+    </div>
+
+
+<!-------------------------------------main------------------------------------->
+
+      <div class="main">
+        
+              <div class="menuleftandright">
+                  <div class="menuleft">
+                      <a href="seçaotops.html"> Tops</a>
+                      <a href="seçaotops.html"> Camisolas</a>
+                      <a href="seçaotops.html"> Calças</a>
+                      <a href="seçaotops.html"> Acessórios</a>
+
+                  </div>
+                  <div class="menuright">
+                      <div class="title"> <h2> Tops</h2></div>
+                      <div class="photo">
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/1.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/2.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                      
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/3.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/4.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                          </div>
+
+                      <div class="photo">
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/5.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/6.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/7.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/8.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                      </div>
+
+                      <div class="photo">
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/9.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/10.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/11.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/12.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                          </div> 
+
+                      <div class="photo">
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/13.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/14.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/15.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                              </div>
+                          <div class="item">
+                              <a href="produto.html"><img src="IMG/16.png"></a>
+                              <a href="produto.html"class="align">Camisola</a>
+                              <h6 class="align">15.99€</h6>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+
+
+<!-------------------------------------footer------------------------------------->
+<footer>
+    <div class="footermain">
+        <div class="footer1">
+            <a href="#"> FAQ</a>
+            <a href="#"> Sobre Nós</a>
+            <a href="#"> Contactos</a>
+        </div>
+        <div class="footer2">
+            <a href="#"><img src="IMG/logo.png"></a>
+        </div>
+        <div class="footer3">
+            <div class="icons">
+                <a href="https://www.facebook.com/"><img src="IMG/facebook-4-512.png"></a>
+                <a href="https://www.instagram.com/"><img src="IMG/instagram-4-512.png"></a>
+                <a href="https://www.pinterest.com/"><img src="IMG/pinterest-4-512.png"></a>
+            </div>
+            <div class="icons">
+                <a href="https://www.tiktok.com/"><img src="IMG/tiktok-3-512.png"></a>
+                <a href="https://www.twitter.com/"><img src="IMG/twitter-4-512.png"></a>
+                <a href="https://www.linkedin.com/"><img src="IMG/linkedin-4-512.png"></a>
+            </div>
+        </div>
+</div>
+</div>
+</footer>
+
+<script src="./bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/js/bootstrap.js">
+</script>
+<script src="./bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
