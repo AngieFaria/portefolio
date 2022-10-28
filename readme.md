@@ -1,2 +1,2 @@
-# portefolio
-ux/ui and frontend portefolio
+# portfolio
+ux/ui and frontend portfolio
